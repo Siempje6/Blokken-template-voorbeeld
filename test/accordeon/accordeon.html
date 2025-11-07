@@ -1,0 +1,209 @@
+<div class="wrapper">
+    <div class="accordeon">
+        <div class="accordeon-wrapper">
+            <div class="accordeon-item">
+                <div class="accordeon-content">
+                    <h2 class="accordeon-item-title">
+
+                        <span class="span-accordeon">“Our Vision”</span>
+                        <img src="../../assets/icons/plus-svgrepo-com.svg" alt="" class="svg-accordeon">
+                    </h2>
+
+                    <p class="accordeon-item-text">
+                        At Reflection, our vision is to create a world where technology amplifies human potential rather
+                        than replacing it.
+                        We believe in building tools that remove barriers and give people the freedom to think bigger,
+                        work smarter, and collaborate without limits.
+                        Our focus on simplicity, accessibility, and thoughtful design ensures that every product we
+                        create serves a meaningful purpose and improves real lives.
+                        We don’t chase trends — we build foundations for the future.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordeon-item">
+                <div class="accordeon-content">
+                    <h2 class="accordeon-item-title">
+
+                        <span class="span-accordeon">“Work Culture”</span>
+                        <img src="../../assets/icons/plus-svgrepo-com.svg" alt="" class="svg-accordeon">
+                    </h2>
+
+                    <p class="accordeon-item-text">
+                        We are a team driven by curiosity, respect, and shared purpose.
+                        Every member is trusted to take ownership of their work, explore new ideas, and challenge the
+                        status quo.
+                        We encourage open discussions, celebrate mistakes as learning opportunities, and believe that
+                        great ideas can come from anywhere.
+                        Our culture thrives on transparency and collaboration, ensuring that everyone feels seen,
+                        supported, and valued.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordeon-item">
+                <div class="accordeon-content">
+                    <h2 class="accordeon-item-title">
+
+                        <span class="span-accordeon">“Growth & Learning”</span>
+                        <img src="../../assets/icons/plus-svgrepo-com.svg" alt="" class="svg-accordeon">
+                    </h2>
+
+                    <p class="accordeon-item-text">
+                        Continuous growth is at the heart of what we do.
+                        We offer personal learning budgets, mentorship programs, and regular workshops that help our
+                        people stay curious and keep expanding their skills.
+                        Whether you’re exploring a new framework, studying design systems, or developing leadership
+                        skills, we make sure you have the time and resources to grow.
+                        Because when our team grows, the whole company evolves.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordeon-item">
+                <div class="accordeon-content">
+                    <h2 class="accordeon-item-title">
+
+                        <span class="span-accordeon">“Innovation”</span>
+                        <img src="../../assets/icons/plus-svgrepo-com.svg" alt="" class="svg-accordeon">
+                    </h2>
+
+                    <p class="accordeon-item-text">
+                        Innovation isn’t about being first — it’s about being meaningful.
+                        We approach every project with a mindset of experimentation and iteration, asking not just “can
+                        we build it?” but “should we build it?”.
+                        Through collaboration between designers, engineers, and researchers, we turn complex challenges
+                        into elegant, functional solutions.
+                        Our best ideas often start as small sparks of curiosity that grow into something transformative.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordeon-item">
+                <div class="accordeon-content">
+                    <h2 class="accordeon-item-title">
+
+                        <span class="span-accordeon">“Community”</span>
+                        <img src="../../assets/icons/plus-svgrepo-com.svg" alt="" class="svg-accordeon">
+                    </h2>
+
+                    <p class="accordeon-item-text">
+                        Our success doesn’t exist in isolation — it’s shaped by the communities around us.
+                        We actively support open-source projects, educational initiatives, and local programs that help
+                        people learn and connect through technology.
+                        We host events, share knowledge, and encourage our team to contribute to causes that matter.
+                        Because building great products is important, but building a better world together is even more
+                        powerful.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const accordeonTitles = document.querySelectorAll('.accordeon-item-title');
+
+    accordeonTitles.forEach(title => {
+        title.addEventListener('click', () => {
+            const item = title.closest('.accordeon-item');
+
+            document.querySelectorAll('.accordeon-item').forEach(i => {
+                if (i !== item) i.classList.remove('open');
+            });
+
+            item.classList.toggle('open');
+        });
+    });
+</script>
+
+
+
+<style>
+    .wrapper {
+        width: 99vw;
+        height: 99vh;
+
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+        display: grid;
+        grid-template-columns: 0.5fr 5fr 0.5fr;
+        grid-template-rows: 0.5fr 5fr 0.5fr;
+    }
+
+    .accordeon {
+        grid-column: 2/3;
+        grid-row: 2/3;
+
+        padding: 15px;
+    }
+
+    .accordeon-wrapper {
+        padding: 15px 10px;
+        border-radius: 20px;
+
+        background-color: ;
+    }
+
+    .accordeon-item {
+        background-color: ;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+
+    .span-accordeon {
+        grid-column: 1/2;
+        margin: 10px;
+    }
+
+    .svg-accordeon {
+        grid-column: 2/3;
+        height: 20px;
+        margin: 10px;
+    }
+
+    .accordeon-item-title {
+        display: grid;
+        grid-template-columns: 1fr 50px;
+    }
+
+
+    .accordeon-content {}
+
+    .accordeon-item-title {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 50px;
+        color: black;
+        padding: 5px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .accordeon-content h2 {
+        margin-left: 20px;
+    }
+
+    .accordeon-item-text {
+        overflow: hidden;
+        max-height: 0;
+        transition: 0.3s ease;
+        color: #444;
+        padding: 0 8px;
+    }
+
+    .accordeon-item.open .accordeon-item-text {
+        max-height: 500px;
+        padding: 20px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin: -2px 30px;
+    }
+
+    .accordeon-content p,
+    .accordeon-item h2 {
+        margin: 3px;
+    }
+</style>
