@@ -1,0 +1,36 @@
+<div class="wrapper">
+    <div class="testgrid">
+        <div class="column" style="background-color: rgb(132, 169, 132);"></div>
+        <div class="column" style="background-color: rgb(132, 169, 132);"></div>
+        <div class="column" style="background-color: rgb(132, 169, 132);"></div>
+        <div class="column" style="background-color: rgb(132, 169, 132);"></div>
+    </div>
+</div>
+
+
+<style>
+    .wrapper {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+        display: grid;
+        grid-template-columns: 0.5fr 5fr 0.5fr;
+        grid-template-rows: 0.5fr 5fr 0.5fr;
+    }
+
+    .testgrid {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .column {
+        flex: 1 1 340px;
+        border-radius: 10px;
+    }
+</style>

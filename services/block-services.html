@@ -1,51 +1,351 @@
-<div class="gridsite"
-     style="width: 100vw; height: 100vh; 
-     position: absolute; top: 0px; left: 0px;
-     display: grid; grid-template-columns: 1fr 4fr 1fr; grid-template-rows: 1fr 3fr 1fr;">
+<div class="gridsite" style="
+  width: 95vw; 
+  height: auto; 
+  position: absolute; 
+  top: 0px; 
+  left: 0px;
+  display: grid; 
+  grid-template-columns: 1fr 4fr 1fr; 
+  grid-template-rows: 100px 3fr 100px;
+">
 
-    <div class="services"
-         style="grid-column: 2/3; grid-row: 2/3;">
+  <div class="services" style="grid-column: 2/3; grid-row: 2/3;">
 
-        <div class="services-grid"
-             style=" height: 100%; 
-             display: grid; grid-template-columns: 1fr 1.2fr 1fr; grid-template-rows: 1fr;
-             gap: 10px;">
+    <div class="services-grid" style="
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+      gap: 20px;
+    ">
 
-            <div class="services-column-startup"
-                 >
-                 
+      <div class="services-column" style=" width:100%; display: flex; justify-content: center; align-items: stretch;">
+        <div class="service-card" style="
+          width: 100%; 
+          background-color: #16181e; 
+          border-radius: 10px; 
+          display: grid; 
+          grid-template-rows: auto 1fr;
+          min-height: 550px;
+          padding-bottom: 30px;
+        ">
+          
+          <!-- === HEAD === -->
+          <div class="head" style="
+            display: grid; 
+            grid-template-rows: repeat(3, auto);
+            padding-top: 30px;
+          ">
 
-                <div class="startupservices"
-                     style=" grid-column: 1/2; grid-row: 2/3;
-                     width: 100%; height: 100%;
-                     background-color: #f8f8f8;">
+            <h2 class="title" style="
+              margin: 0;
+              text-align: center;
+              color: #cdebf0; 
+              font-size: 40px; 
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            ">
+              Free
+            </h2>
 
-                </div>
+            <h3 class="price" style="
+              display: flex;
+              justify-content: center;
+              align-items: baseline;
+              margin: 10px 0;
+            ">
+              <span style="font-size: 25px; color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">$</span>
+              <span style="font-size: 50px; color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">0</span>
+              <span style="color: #666666; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 30px; margin-left: 5px;">/month</span>
+            </h3>
+
+            <div class="btn" style="display: flex; justify-content: center; align-items: center; margin: 20px;">
+              <a href="#" class="button" style="
+                color: #16181e; 
+                background-color: #cdebf0; 
+                padding: 12px 30px; 
+                border-radius: 50px; 
+                text-decoration: none;
+                font-size: 16px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              ">
+                Get Started
+              </a>
+            </div>
+          </div>
+
+          <!-- === CONTENT === -->
+          <div class="content" style="
+            display: grid;
+            grid-template-rows: 50px 1fr; 
+            grid-template-columns: 1fr 2fr 1fr;
+          ">
+
+            <div class="title-content" style="grid-column: 1/4; display: flex; justify-content: center; align-items: center;">
+              <h3 style="
+                font-size: 18px; 
+                color: white; 
+                font-family: 'Times New Roman', Times, serif; 
+                font-weight: 200;
+              ">
+                Features include:
+              </h3>
             </div>
 
-            <div class="services-column-basic"
-                 >
-                 
+            <div class="list-included" style="grid-column: 2/3; grid-row: 2/3; display: flex; flex-direction: column; gap: 10px;">
+              
+              <p style="color: white; display: flex; align-items: center; gap: 15px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 200; font-size: 16px;">
+                <img src="../assets/icons/check.svg" alt="check icon">
+                1 Seat
+              </p>
 
-                <div class="startupservices"
-                     style=" grid-column: 1/2; grid-row: 2/3;
-                     width: 100%; height: 100%;
-                     background-color: #f8f8f8;">
+              <p style="color: white; display: flex; align-items: center; gap: 15px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 200; font-size: 16px;">
+                <img src="../assets/icons/check.svg" alt="check icon">
+                1 active project
+              </p>
 
-                </div>
+              <p style="color: white; display: flex; align-items: center; gap: 15px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 200; font-size: 16px;">
+                <img src="../assets/icons/check.svg" alt="check icon">
+                Unlimited viewers
+              </p>
+
+              <p style="color: white; display: flex; align-items: center; gap: 15px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 200; font-size: 16px;">
+                <img src="../assets/icons/check.svg" alt="check icon">
+                10 blocks
+              </p>
             </div>
-
-            <div class="services-column-buisiness"
-                 >
-                 
-
-                <div class="buisniness-services"
-                     style=" grid-column: 1/2; grid-row: 2/3;
-                     width: 100%; height: 100%;
-                     background-color: #f8f8f8;">
-
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- Kopie 2 -->
+      <div class="services-column" style="display: flex; width:100%; justify-content: center; align-items: stretch;">
+        <div class="service-card" style="
+          width: 100%; 
+          background-color: #16181e; 
+          border-radius: 10px; 
+          display: grid; 
+          grid-template-rows: auto 1fr;
+          min-height: 550px;
+          padding-bottom: 30px;
+        ">
+          <!-- Zelfde inhoud -->
+          <div class="head" style="
+            display: grid; 
+            grid-template-rows: repeat(3, auto);
+            padding-top: 30px;
+          ">
+
+            <h2 class="title" style="
+              margin: 0;
+              text-align: center;
+              color: #cdebf0; 
+              font-size: 40px; 
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            ">
+              Starter
+            </h2>
+
+            <h3 class="price" style="
+              display: flex;
+              justify-content: center;
+              align-items: baseline;
+              margin: 10px 0;
+            ">
+              <span style="font-size: 25px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white;">$</span>
+              <span style="font-size: 50px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white;">10</span>
+              <span style="color: #666666; font-size: 30px; margin-left: 5px;">/month</span>
+            </h3>
+
+            <div class="btn" style="display: flex; justify-content: center; align-items: center; margin: 20px;">
+              <a href="#" style="
+                color: #16181e; background-color: #cdebf0; 
+                padding: 12px 30px; border-radius: 50px; text-decoration: none;
+                font-size: 16px;">
+                Get Started
+              </a>
+            </div>
+          </div>
+
+          <div class="content" style="
+            display: grid;
+            grid-template-rows: 50px 1fr; 
+            grid-template-columns: 1fr 2fr 1fr;
+          ">
+
+            <div class="title-content" style="grid-column: 1/4; display: flex; justify-content: center; align-items: center;">
+              <h3 style="font-size: 18px; color: white; font-weight: 200;">All free features included, plus:</h3>
+            </div>
+
+            <div class="list-included" style="grid-column: 2/3; grid-row: 2/3; display: flex; flex-direction: column; gap: 10px;">
+              <p style="color: white; display: flex; align-items: center; gap: 15px;"><img src="../assets/icons/check.svg">2 Seats</p>
+              <p style="color: white; display: flex; align-items: center; gap: 15px;"><img src="../assets/icons/check.svg">2 active projects</p>
+              <p style="color: white; display: flex; align-items: center; gap: 15px;"><img src="../assets/icons/check.svg">Unlimited viewers</p>
+              <p style="color: white; display: flex; align-items: center; gap: 15px;"><img src="../assets/icons/check.svg">Unlimited blocks</p>
+              <p style="color: white; display: flex; align-items: center; gap: 15px;"><img src="../assets/icons/check.svg">CVS Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kopie 3 -->
+      <div class="services-column" style="display: flex; width:100%; justify-content: center; align-items: stretch;">
+        <div class="service-card" style="
+          width: 100%; 
+          background-color: #16181e; 
+          border-radius: 10px; 
+          display: grid; 
+          grid-template-rows: auto 1fr;
+          min-height: 550px;
+          padding-bottom: 30px;
+        ">
+          <div class="head" style="
+            display: grid; 
+            grid-template-rows: repeat(3, auto);
+            padding-top: 30px;
+          ">
+
+            <h2 class="title" style="
+              margin: 0;
+              text-align: center;
+              color: #cdebf0; 
+              font-size: 40px;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            ">
+              Team
+            </h2>
+
+            <h3 class="price" style="
+              display: flex;
+              justify-content: center;
+              align-items: baseline;
+              margin: 10px 0;
+            ">
+              <span style="font-size: 25px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white;">$</span>
+              <span style="font-size: 50px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white;">20</span>
+              <span style="color: #666666; font-size: 30px; margin-left: 5px;">/month</span>
+            </h3>
+
+            <div class="btn" style="display: flex; justify-content: center; align-items: center; margin: 20px;">
+              <a href="#" style="
+                color: #16181e; background-color: #cdebf0; 
+                padding: 12px 30px; border-radius: 50px; text-decoration: none;
+                font-size: 16px;">
+                Get Started
+              </a>
+            </div>
+          </div>
+
+          <div class="content" style="
+            display: grid;
+            grid-template-rows: 50px 1fr; 
+            grid-template-columns: 1fr 2fr 1fr;
+          ">
+            <div class="title-content" style="grid-column: 1/4; display: flex; justify-content: center; align-items: center;">
+              <h3 style="font-size: 18px; color: white; font-weight: 200;">All Starter features included, plus:</h3>
+            </div>
+
+            <div class="list-included" style="grid-column: 2/3; grid-row: 2/3; display: flex; flex-direction: column; gap: 10px;">
+              <p style="color: white; display: flex; align-items: center; gap: 15px;"><img src="../assets/icons/check.svg">8 Seats</p>
+              <p style="color: white; display: flex; align-items: center; gap: 15px;"><img src="../assets/icons/check.svg">10 active projects</p>
+              <p style="color: white; display: flex; align-items: center; gap: 15px;"><img src="../assets/icons/check.svg">Unlimited viewers</p>
+              <p style="color: white; display: flex; align-items: center; gap: 15px;"><img src="../assets/icons/check.svg">Unlimited blocks</p>
+              <p style="color: white; display: flex; align-items: center; gap: 15px;"><img src="../assets/icons/check.svg">Cusomization</p>
+              <p style="color: white; display: flex; align-items: center; gap: 15px;"><img src="../assets/icons/check.svg">Team Management</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="services-column" style="display: flex; width:100%; justify-content: center; align-items: stretch;">
+        <div class="service-card" style="
+          width: 100%; 
+          background-color: #16181e; 
+          border-radius: 10px; 
+          display: grid; 
+          grid-template-rows: auto 1fr;
+          min-height: 550px;
+          padding-bottom: 30px;
+        ">
+          <div class="head" style="
+            display: grid; 
+            grid-template-rows: repeat(3, auto);
+            padding-top: 30px;
+          ">
+
+            <h2 class="title" style="
+              margin: 0;
+              text-align: center;
+              color: #cdebf0; 
+              font-size: 40px;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            ">
+              Enterprise
+            </h2>
+
+            <h3 class="price" style="
+              display: flex;
+              justify-content: center;
+              align-items: baseline;
+              margin: 10px 0;
+            ">
+              <span style="font-size: 25px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white;">$</span>
+              <span style="font-size: 50px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white;">40</span>
+              <span style="color: #666666; font-size: 30px; margin-left: 5px;">/month</span>
+            </h3>
+
+            <div class="btn" style="display: flex; justify-content: center; align-items: center; margin: 20px;">
+              <a href="#" style="
+                color: #16181e; background-color: #cdebf0; 
+                padding: 12px 30px; border-radius: 50px; text-decoration: none;
+                font-size: 16px;">
+                Get Started
+              </a>
+            </div>
+          </div>
+
+          <div class="content" style="
+            display: grid;
+            grid-template-rows: 50px 1fr; 
+            grid-template-columns: 1fr 2fr 1fr;
+          ">
+            <div class="title-content" style="grid-column: 1/4; display: flex; justify-content: center; align-items: center;">
+              <h3 style="font-size: 18px; color: white; font-weight: 200;">All Starter features included, plus:</h3>
+            </div>
+
+            <div class="list-included" style="grid-column: 2/3; grid-row: 2/3; display: flex; flex-direction: column; gap: 10px;">
+              <p style="color: white; display: flex; align-items: center; gap: 15px;"><img src="../assets/icons/check.svg">100 Seats</p>
+              <p style="color: white; display: flex; align-items: center; gap: 15px;"><img src="../assets/icons/check.svg">2000 projects</p>
+              <p style="color: white; display: flex; align-items: center; gap: 15px;"><img src="../assets/icons/check.svg">Unlimited viewers</p>
+              <p style="color: white; display: flex; align-items: center; gap: 15px;"><img src="../assets/icons/check.svg">Unlimited blocks</p>
+              <p style="color: white; display: flex; align-items: center; gap: 15px;"><img src="../assets/icons/check.svg">Customization</p>
+              <p style="color: white; display: flex; align-items: center; gap: 15px;"><img src="../assets/icons/check.svg">Team management</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
 </div>
+<style>
+.services-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+/* Slim trucje om laatste rij altijd op te vullen */
+.services-grid::after {
+  content: "";
+  flex: auto;
+}
+
+
+</style>
