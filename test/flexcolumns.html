@@ -1,6 +1,8 @@
 <div class="wrapper">
     <div class="testgrid">
-        <div class="column" style="background-color: rgb(132, 169, 132);"></div>
+        <div class="column" style="background-color: rgb(132, 169, 132);">
+            <img src="" alt="">
+        </div>
         <div class="column" style="background-color: rgb(132, 169, 132);"></div>
         <div class="column" style="background-color: rgb(132, 169, 132);"></div>
         <div class="column" style="background-color: rgb(132, 169, 132);"></div>
@@ -32,5 +34,22 @@
     .column {
         flex: 1 1 340px;
         border-radius: 10px;
+        max-height: 550px;
+
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 0.5fr 5fr 0.5fr;
+        grid-template-rows: 0.5fr 4fr 1fr 2fr 1fr 0.5fr;
+        
+    }
+    .column img {
+        grid-column: 2/3;
+        grid-row: 2/3;
+
+        background-color: #f8f8f8; 
+        width: 100%; 
+        height: 100%; 
+        border-radius: 10px; 
+        border: none;
     }
 </style>

@@ -1,0 +1,99 @@
+<div class="wrapper" style="display: grid; grid-template-columns: 0.5fr 5fr 0.5fr; grid-template-rows: 0.5fr 4fr 0.5fr;
+     height: 100vh; width: 100vw; position: absolute; top: 0px; left: 0px;">
+
+    <div class="table" style="grid-column: 2/3; grid-row: 2/3;
+         display: grid; grid-template-columns: 0.5fr 5fr 0.5fr; grid-template-rows: 0.5fr 4fr 0.5fr;">
+
+        <table class="table" style="grid-column: 2/3; grid-row: 2/3;">
+            <thead>
+                <th>Productnaam</th>
+                <th>Beschrijving</th>
+                <th>Prijs</th>
+                <th>Beschikbaarheid</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>iPhone 15</td>
+                    <td>128GB, Zilver</td>
+                    <td>€999</td>
+                    <td>Op voorraad</td>
+                </tr>
+                <tr>
+                    <td>Samsung S24</td>
+                    <td>256GB, Zwart</td>
+                    <td>€899</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Google Pixel 9</td>
+                    <td>128GB, Wit</td>
+                    <td>€799</td>
+                    <td>Binnenkort leverbaar</td>
+                </tr>
+                <tr>
+                    <td>OnePlus 13</td>
+                    <td></td>
+                    <td>€749</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <style>
+            @keyframes Test {
+                0% {background-color: #1a5428; left: -200px;}
+                25% {background-color: #1a5428b7; left: -150px;}
+                50% {background-color: #1a542880; left: -100px;}
+                75% {background-color: #1a54283b; left: -50px;}
+                100% {background-color: transparent; left: 0px;}
+            }
+
+            table {
+                position: relative;
+                max-height: 18rem;
+                overflow-x: auto;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+                animation-name: Test;
+                animation-duration: 4s;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: separate;
+                border-spacing: 0;
+                min-width: 600px;
+            }
+
+            th {
+                color: white;
+                background: #1a5428;
+            }
+
+            td {
+                padding: 3px 20px;
+            }
+
+            .table tbody tr:last-child td:first-child {
+                border-bottom-left-radius: 15px;
+            }
+
+            .table tbody tr:last-child td:last-child {
+                border-bottom-right-radius: 15px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #1a542824;
+            }
+
+            th:first-child {
+                border-top-left-radius: 15px;
+            }
+
+            th:last-child {
+                border-top-right-radius: 15px;
+            }
+        </style>
+    </div>
+</div>
